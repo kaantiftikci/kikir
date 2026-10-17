@@ -9,14 +9,16 @@
 <ul>
 <li><strong>Reklam (Google AdMob):</strong> Ücretsiz kullanıcılar isteğe bağlı olarak ödüllü reklam izleyebilir. AdMob reklam göstermek için cihaz ve reklam verisi işler. Reklam kimliği (IDFA) yalnızca iOS'un "Uygulamanın İzlemesine İzin Ver" sorusuna onay verirsen kullanılır; vermezsen reklamlar kişiselleştirilmez. <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a></li>
 <li><strong>Çökme raporları (Firebase Crashlytics):</strong> Uygulama çökerse cihaz modeli, iOS sürümü ve çökme anındaki teknik iz anonim olarak gönderilir. Bu veriler kimliğinle ilişkilendirilmez.</li>
-<li><strong>Uzaktan içerik (Firebase Remote Config):</strong> Yeni soru paketleri ve sezonluk tema için uygulama en fazla 12 saatte bir yapılandırma indirir; bu istekte kişisel veri yoktur.</li>
-<li><strong>İçerik denetimi:</strong> Kendi soru paketine eklediğin kart metni, uygunsuz içerik kontrolü için bir yapay zekâ denetim servisine gönderilebilir. Metin saklanmaz ve kimliğinle ilişkilendirilmez.</li>
+<li><strong>Uzaktan içerik (Firebase Remote Config ve Cloud Firestore):</strong> Yeni kartlar, oyun ayarları, sezonluk tema ve duyurular için uygulama düzenli olarak yapılandırma indirir; bu isteklerde kişisel veri yoktur.</li>
+<li><strong>Anonim kullanım sayıları (Cloud Firestore):</strong> Uygulamayı geliştirmek için yalnızca günlük toplam sayılar tutulur: uygulama açılışı, hangi oyunun kaç kez ve ne kadar süre oynandığı, cihaz dili, ülke/bölge ayarı, uygulama sürümü, satın alma ve reklam ödülü sayıları. Bu sayılara hiçbir kimlik, cihaz kimliği ya da oyuncu adı eklenmez; tek bir kişiye bağlanamaz.</li>
+<li><strong>Geri bildirim ve içerik bildirimi:</strong> "Geri bildirim gönder" formuna yazdığın metin ya da bildirdiğin kartın metni; uygulama dili ve sürümüyle birlikte bize gönderilir. Ad, e-posta ya da cihaz kimliği gönderilmez. Bunu yalnızca sen göndermeyi seçersen olur.</li>
+<li><strong>Hatırlatıcılar:</strong> Profil'den "Oyun gecesi hatırlatıcıları"nı açarsan, hatırlatmalar telefonunda yerel bildirim olarak planlanır. Bunun için sunucuya bilgi gönderilmez; istediğin an kapatabilirsin.</li>
 <li><strong>Satın almalar:</strong> Kikir Pro satın alımları tamamen Apple tarafından işlenir; ödeme bilgilerine erişimimiz yoktur.</li>
 </ul>
 <h2>Yerel ağ ve oda modu</h2>
 <p>Oda modu, aynı ortamdaki cihazları internet olmadan bağlamak için yerel ağ ve Bluetooth kullanır. Odadaki cihazlar arasında yalnızca oyuncu adı ve oyun durumu paylaşılır; hiçbir veri sunucumuza gitmez.</p>
 <h2>Çocuklar</h2>
-<p>Kikir 12 yaş ve üstü için tasarlanmıştır ve bilerek 13 yaş altı çocuklardan kişisel veri toplamaz.</p>
+<p>Kikir 13 yaş ve üstü için tasarlanmıştır ve bilerek 13 yaş altı çocuklardan kişisel veri toplamaz.</p>
 <h2>Haklarınız ve silme</h2>
 <p>Tüm yerel verilerini uygulamayı silerek kaldırabilirsin. Reklam izlemesini iOS Ayarlar &gt; Gizlilik ve Güvenlik &gt; İzleme bölümünden kapatabilirsin. KVKK ve GDPR kapsamındaki talepler için bize yaz.</p>
 <h2>İletişim</h2>
@@ -30,14 +32,16 @@
 <ul>
 <li><strong>Advertising (Google AdMob):</strong> Free users may optionally watch a rewarded ad. AdMob processes device and ad data to serve ads. The advertising identifier (IDFA) is used only if you allow tracking in iOS; otherwise ads are not personalised. <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
 <li><strong>Crash reports (Firebase Crashlytics):</strong> If the app crashes, the device model, iOS version and a technical stack trace are sent anonymously and are not linked to your identity.</li>
-<li><strong>Remote content (Firebase Remote Config):</strong> The app downloads a configuration at most every 12 hours for new question packs and seasonal themes; the request contains no personal data.</li>
-<li><strong>Moderation:</strong> Text you add to your own question pack may be sent to an AI moderation service to check for inappropriate content. It is not stored or linked to you.</li>
+<li><strong>Remote content (Firebase Remote Config and Cloud Firestore):</strong> The app regularly downloads configuration for new cards, game settings, seasonal themes and announcements; these requests contain no personal data.</li>
+<li><strong>Anonymous usage counts (Cloud Firestore):</strong> To improve the app we keep daily totals only: app opens, which games were played and for how long, device language, country/region setting, app version, and counts of purchases and ad rewards. No identity, device identifier or player name is attached; the counts cannot be linked to a person.</li>
+<li><strong>Feedback and content reports:</strong> Text you write in "Send feedback", or the text of a card you report, is sent to us with the app language and version. No name, email or device identifier is sent, and this only happens when you choose to send it.</li>
+<li><strong>Reminders:</strong> If you turn on "Game night reminders" in Profile, reminders are scheduled as local notifications on your phone. Nothing is sent to a server for this, and you can turn them off any time.</li>
 <li><strong>Purchases:</strong> Kikir Pro purchases are handled entirely by Apple; we never see your payment details.</li>
 </ul>
 <h2>Local network and room mode</h2>
 <p>Room mode uses the local network and Bluetooth to connect nearby devices without the internet. Only player names and game state are shared between devices in the room; nothing reaches our servers.</p>
 <h2>Children</h2>
-<p>Kikir is designed for ages 12+ and does not knowingly collect personal data from children under 13.</p>
+<p>Kikir is designed for ages 13+ and does not knowingly collect personal data from children under 13.</p>
 <h2>Your rights and deletion</h2>
 <p>Delete the app to remove all local data. Turn off ad tracking in iOS Settings &gt; Privacy &amp; Security &gt; Tracking. For GDPR requests, contact us.</p>
 <h2>Contact</h2>
